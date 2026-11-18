@@ -183,13 +183,39 @@ $\bar\theta(0)=T_a-T_\infty$, $\bar\theta'(L)=0$. The general solution
 $A\cosh[m(L-x)]+B\sinh[m(L-x)]$ has slope $-m\{A\sinh[m(L-x)]+B\cosh[m(L-x)]\}$, which is
 $-mB$ at $x=L$, so $B=0$; then $A\cosh(mL)=T_a-T_\infty$.
 
-**Oscillation.** $\tilde\theta=F(x)e^{i\omega t}$ gives $i\omega F=\kappa F''-\nu F$, so
-$F''=s^2F$ with $s^2=(\nu+i\omega)/\kappa$. Writing $s=q+iq'$ gives
-$q^2-q'^2=\nu/\kappa$ and $2qq'=\omega/\kappa$. The same steps with $F(0)=T_b$ and
-$F'(L)=0$ give $F=T_b\cosh[s(L-x)]/\cosh(sL)$. Hence
+**Oscillation.** \(\tilde\theta=F(x)e^{i\omega t}\) gives
 
-$T(x,t)=T_\infty+(T_a-T_\infty)\frac{\cosh[m(L-x)]}{\cosh(mL)} +\mathrm{Re}\left\{T_b\frac{\cosh[s(L-x)]}{\cosh(sL)}e^{i\omega t}\right\}.$
+$$
+i\omega F=\kappa F''-\nu F,
+$$
 
+so \(F''=s^2F\) with \(s^2=(\nu+i\omega)/\kappa\). Writing \(s=q+iq'\) gives
+
+$$
+q^2-q'^2=\frac{\nu}{\kappa}
+\quad\text{and}\quad
+2qq'=\frac{\omega}{\kappa}.
+$$
+
+The same steps with \(F(0)=T_b\) and \(F'(L)=0\) give
+
+$$
+F=T_b\frac{\cosh[s(L-x)]}{\cosh(sL)}.
+$$
+
+Hence
+
+$$
+T(x,t)
+=
+T_\infty
++
+(T_a-T_\infty)\frac{\cosh[m(L-x)]}{\cosh(mL)}
++
+\mathrm{Re}\left\{
+T_b\frac{\cosh[s(L-x)]}{\cosh(sL)}e^{i\omega t}
+\right\}.
+$$
 **Check 1 ($x=0$).** Both ratios equal $\cosh(mL)/\cosh(mL)=1$ and
 $\cosh(sL)/\cosh(sL)=1$. So $T(0,t)=T_\infty+(T_a-T_\infty)+\mathrm{Re}\{T_be^{i\omega t}\}
 =T_a+T_b\cos\omega t$. ✓
