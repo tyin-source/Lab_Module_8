@@ -1,0 +1,7 @@
+drive,source,u_a,u_b,mean_C,amp_C,resid_amp_C
+zero-centered,measured,0.00159874,50.015,25.5403,3.28064,0.561414
+zero-centered,one-lump,0,50,25.5048,3.79086,0.339259
+zero-centered,coupled TEC-rod,0,50,25.6571,3.20937,0.313501
+positive-only,measured,54.9979,50.0027,44.3625,4.77036,0.0621834
+positive-only,one-lump,55,50,44.3633,5.33585,0.0111307
+positive-only,coupled TEC-rod,55,50,44.4316,4.58695,0.0100344

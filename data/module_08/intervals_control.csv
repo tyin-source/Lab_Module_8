@@ -1,0 +1,16 @@
+label,file,part,step,t_start_s,t_end_s,settle,exclude,notes
+# S18.3-S18.4 from the automatic run of schedules/s18_3_4_raw_pwm.csv (16 Nov 2026). Rows whose label starts with # are ignored.,,,,,,,,
+s18_3_pwm300,data/module_08/angstrom_20261116-211726.csv,,32,1992.2,,no,,S18.3 u_b = 50; first cycle excluded; amplitude and phase settled; mean still rising about 0.2 C per cycle (rod warming)
+s18_3_pwm200,data/module_08/angstrom_20261116-211726.csv,,33,,,yes,,S18.3 u_b = 50; settled from the second cycle
+s18_3_pwm100,data/module_08/angstrom_20261116-211726.csv,,34,4305.0,,no,,S18.3 u_b = 50; first cycle excluded; amplitude and phase settled; mean still rising about 0.07 C per cycle
+s18_4_pos100,data/module_08/angstrom_20261116-211726.csv,,35,,,yes,,S18.4 u_a = 55 u_b = 50; settled after about 16 cycles (rod warming)
+s18_6_ff100,data/module_08/angstrom_20261117-083725.csv,,20,1107.9,1609.9,no,,S18.6 feedforward Ta = 40 Tb = 16 100 s; T_room 23.10 C; settled (automatic run)
+s18_7_p100,data/module_08/angstrom_20261117-083725.csv,,22,1610.9,2112.9,no,,S18.7 P only Kp = 6
+s18_7_pi100,data/module_08/angstrom_20261117-083725.csv,,24,2814.0,3316.2,no,,S18.7 initial PI Kp = 6 Ki = 0.04
+s18_7_pi200,data/module_08/angstrom_20261117-083725.csv,,25,4317.2,5321.5,no,,S18.7 PI Kp = 6 Ki = 0.04 at 200 s
+s18_7_pi300,data/module_08/angstrom_20261117-083725.csv,,26,5922.5,7428.9,no,,S18.7 PI Kp = 6 Ki = 0.04 at 300 s
+s18_7_pi100_t1,data/module_08/angstrom_20261117-114802.csv,,20,506.9,1009.0,no,,S18.7 tuning 1 Kp = 15 Ki = 0.15 at 100 s (segment restarted after a glitch on T3 at 207 s)
+s18_7_pi100_t2,data/module_08/angstrom_20261117-114802.csv,,22,1410.0,1912.2,no,,S18.7 tuning 2 Kp = 30 Ki = 0.3 at 100 s (cooling expected to saturate)
+s18_7_pi100_tb10,data/module_08/angstrom_20261117-114802.csv,,23,2113.2,2615.4,no,,Kp = 30 Ki = 0.3 at 100 s with Tb = 10 C
+s18_7_pi200_sel,data/module_08/angstrom_20261117-114802.csv,,25,2816.4,3620.6,no,,S18.7 selected gains Kp = 30 Ki = 0.3 at 200 s; first cycle (100 -> 200 s transition) excluded
+s18_7_pi300_sel,data/module_08/angstrom_20261117-114802.csv,,26,3621.6,5127.9,no,,S18.7 selected gains Kp = 30 Ki = 0.3 at 300 s

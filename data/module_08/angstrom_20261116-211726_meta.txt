@@ -1,0 +1,70 @@
+Raw data file: angstrom_20261116-211726.csv
+Created: 2026-11-16T21:17:26
+Serial port: /dev/cu.usbmodem1101 at 115200 baud
+Arduino sketch: arduino/module_08_angstrom_controller/module_08_angstrom_controller.ino
+Python GUI: python/module_08_angstrom_gui.py
+Git commit: 1a5a3bc +uncommitted changes
+Record format and units: see data/module_08/README.md. time_ms is the Arduino clock since its last reset; *_C in degrees C; PWM in counts, cooling negative; nan = field not used in this control mode.
+Temperatures are raw readings (no calibration corrections).
+Rod: 6061-T6, d = 12.70 mm, overall length 28.66 cm, analysis length L (first hole to tip) 26.90 cm (Module 7).
+Channel map (x from the first thermistor hole, +/- 1.3 mm):
+  TEC_C: TEC, input A0, TEC base
+  T1_C: T1, input A1, x = 0.0 cm
+  T2_C: T2, input A2, x = 2.4 cm
+  T3_C: T3, input A3, x = 5.0 cm
+  T4_C: T4, input A4, x = 7.6 cm
+  T5_C: T5, input A5, x = 10.2 cm
+Events (Arduino time, wall-clock time, then the Arduino step number):
+  [     2.06 s | 21:17:30] step 1: SET AMP 16.0000 (was 16.0000)
+  [     2.20 s | 21:17:30] step 2: SET MEAN 40.0000 (was 40.0000)
+  [     2.26 s | 21:17:30] step 3: MODE MANUAL (was MANUAL; q = 0)
+  [     2.32 s | 21:17:30] step 4: SET FFADD 0.0000 (was 0.0000)
+  [     2.38 s | 21:17:30] step 5: SET PERIOD 100.0000 (was 100.0000)
+  [     2.44 s | 21:17:30] step 6: SET KP 6.0000 (was 6.0000)
+  [     2.50 s | 21:17:30] step 7: SET KI 0.0400 (was 0.0400)
+  [     2.56 s | 21:17:30] step 8: SET UMAX 255.0000 (was 255.0000)
+  [     2.63 s | 21:17:30] step 9: SET RATIO 2.8200 (was 2.8200)
+  [     2.70 s | 21:17:31] step 10: SET CHIH 0.4850 (was 0.4850)
+  [     2.75 s | 21:17:31] step 11: SET TROOM 22.0000 (was 22.0000)
+  [     2.81 s | 21:17:31] step 12: SET PWMOFF 0.0000 (was 0.0000)
+  [     2.87 s | 21:17:31] step 13: SET PWMAMP 50.0000 (was 50.0000)
+  [     2.93 s | 21:17:31] step 14: SET MANUAL 0.0000 (was 0.0000)
+  [     2.99 s | 21:17:31] step 15: SET T1LIMIT 56.0000 (was 56.0000)
+  [     3.05 s | 21:17:31] step 16: SET TECLIMIT 60.0000 (was 60.0000)
+  [     3.11 s | 21:17:31] step 16: CONFIG mode=MANUAL Ta_C=40.00 Tb_C=16.00 period_s=100.0 Kp=6.000 Ki=0.0400 u_max=255 r=2.820 chi_H=0.4850 T_room_C=22.00 u_a=0.0 u_b=50.0 manual_pwm=0 ff_add=0 T1_limit_C=56.00 TEC_limit_C=60.00
+  [     7.10 s | 21:17:35] SCHEDULE START s18_3_4_raw_pwm.csv (9 rows)
+  [     7.10 s | 21:17:35] SCHEDULE row 1/9: check_channels [check] OFF, for 120 s, channel spread < 1 C
+  [     7.30 s | 21:17:35] step 17: STOP (output 0); q = 0.00
+  [   128.81 s | 21:19:37] SCHEDULE check_channels done: step 17, 8-129 s, channel spread 0.94 C; row 2/9: test_tec_limit [check] TEST_TEC_LIMIT, MANUAL=40, limit = TEC now + 2 C, heat until SAFETY (max 300 s)
+  [   128.81 s | 21:19:37] SCHEDULE test_tec_limit: TECLIMIT lowered to 23.67 C for the shutdown test
+  [   128.95 s | 21:19:37] step 18: SET MANUAL 40.0000 (was 0.0000)
+  [   129.01 s | 21:19:37] step 19: SET TECLIMIT 23.6700 (was 60.0000)
+  [   129.07 s | 21:19:37] step 20: START mode=MANUAL Ta_C=40.00 Tb_C=16.00 period_s=100.0 Kp=6.000 Ki=0.0400 u_max=255 r=2.820 chi_H=0.4850 T_room_C=22.00 u_a=0.0 u_b=50.0 manual_pwm=40 ff_add=0 T1_limit_C=56.00 TEC_limit_C=23.67
+  [   140.92 s | 21:19:49] step 21: SAFETY SHUTDOWN: TEC 23.89 C above the 23.67 C limit. Both H-bridge outputs set to 0; send START to resume.
+  [   140.92 s | 21:19:49] SCHEDULE test_tec_limit done: step 20, 130-141 s, shutdown with TEC = 23.89 C at the lowered limit 23.67 C: PASS; row 3/9: test_t1_limit [check] TEST_T1_LIMIT, MANUAL=40, limit = T1 now + 2 C, heat until SAFETY (max 600 s)
+  [   140.92 s | 21:19:49] SCHEDULE test_t1_limit: T1LIMIT lowered to 24.37 C for the shutdown test
+  [   140.96 s | 21:19:49] step 22: SET T1LIMIT 24.3700 (was 56.0000)
+  [   141.03 s | 21:19:49] step 23: SET TECLIMIT 60.0000 (was 23.6700)
+  [   141.11 s | 21:19:49] step 24: START mode=MANUAL Ta_C=40.00 Tb_C=16.00 period_s=100.0 Kp=6.000 Ki=0.0400 u_max=255 r=2.820 chi_H=0.4850 T_room_C=22.00 u_a=0.0 u_b=50.0 manual_pwm=40 ff_add=0 T1_limit_C=24.37 TEC_limit_C=60.00
+  [   188.31 s | 21:20:36] step 25: SAFETY SHUTDOWN: T1 24.42 C above the 24.37 C rod-base limit. Both H-bridge outputs set to 0; send START to resume.
+  [   188.31 s | 21:20:36] SCHEDULE test_t1_limit done: step 24, 142-188 s, shutdown with T1 = 24.42 C at the lowered limit 24.37 C: PASS; row 4/9: cool_down [check] OFF, for 1200 s
+  [   188.33 s | 21:20:36] step 26: STOP (output 0); q = 0.00
+  [   188.38 s | 21:20:36] step 27: SET T1LIMIT 56.0000 (was 24.3700)
+  [  1389.36 s | 21:40:37] SCHEDULE cool_down done: step 27, 189-1389 s, channel spread 0.28 C; row 5/9: room_before [baseline] OFF, for 300 s, channel spread < 1 C
+  [  1389.38 s | 21:40:37] step 28: STOP (output 0); q = 0.00
+  [  1691.13 s | 21:45:39] SCHEDULE room_before done: step 28, 1390-1691 s, channel spread 0.23 C; row 6/9: s18_3_pwm300 [control] PWM_SINE, PERIOD=300, PWMOFF=0, PWMAMP=50, settled on TEC + 5 cycles (min 900 s, max 5400 s)
+  [  1691.13 s | 21:45:39] SCHEDULE T_room set to 21.73 C (mean of the six channels during room_before)
+  [  1691.19 s | 21:45:39] step 29: MODE PWM_SINE (was MANUAL; q = 0)
+  [  1691.30 s | 21:45:39] step 30: SET PERIOD 300.0000 (was 100.0000)
+  [  1691.36 s | 21:45:39] step 31: SET TROOM 21.7300 (was 22.0000)
+  [  1691.42 s | 21:45:40] step 32: START mode=PWM_SINE Ta_C=40.00 Tb_C=16.00 period_s=300.0 Kp=6.000 Ki=0.0400 u_max=255 r=2.820 chi_H=0.4850 T_room_C=21.73 u_a=0.0 u_b=50.0 manual_pwm=40 ff_add=0 T1_limit_C=56.00 TEC_limit_C=60.00
+  [  3198.50 s | 22:10:47] SCHEDULE s18_3_pwm300 done: step 32, 1692-3199 s, settled; row 7/9: s18_3_pwm200 [control] PWM_SINE, PERIOD=200, PWMOFF=0, PWMAMP=50, settled on TEC + 5 cycles (min 600 s, max 3600 s)
+  [  3198.58 s | 22:10:47] step 33: SET PERIOD 200.0000 (was 300.0000)
+  [  4203.75 s | 22:27:32] SCHEDULE s18_3_pwm200 done: step 33, 3200-4204 s, settled; row 8/9: s18_3_pwm100 [control] PWM_SINE, PERIOD=100, PWMOFF=0, PWMAMP=50, settled on TEC + 5 cycles (min 300 s, max 2400 s)
+  [  4203.81 s | 22:27:32] step 34: SET PERIOD 100.0000 (was 200.0000)
+  [  4807.70 s | 22:37:36] SCHEDULE s18_3_pwm100 done: step 34, 4305-4808 s, settled; row 9/9: s18_4_pos100 [control] PWM_SINE, PERIOD=100, PWMOFF=55, PWMAMP=50, settled on TEC + 5 cycles (min 300 s, max 2400 s)
+  [  4807.74 s | 22:37:36] step 35: SET PWMOFF 55.0000 (was 0.0000)
+  [  6911.00 s | 23:12:40] SCHEDULE s18_4_pos100 done: step 35, 6409-6911 s, settled; schedule complete
+  [  6911.00 s | 23:12:40] ANALYSIS started: /Users/tianhuan_5000/Documents/GitHub/__Lab_Module_8__/python/analysis/module_08_control_fit.py --intervals /Users/tianhuan_5000/Documents/GitHub/__Lab_Module_8__/data/module_08/analysis/intervals_angstrom_20261116-211726_control.csv --name angstrom_20261116-211726_control > angstrom_20261116-211726_control.log
+  [  6911.02 s | 23:12:40] step 36: STOP (output 0); q = 0.00
+  [  9307.84 s | 23:52:38] GUI closed (STOP sent)

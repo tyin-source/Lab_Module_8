@@ -1,0 +1,4 @@
+source,mean_minus_room_C,amp_C,lag_deg,resid_amp_C
+measured,3.81034,3.28064,75.2073,0.561414
+"one-lump (measured chi_h, chi_c, tau)",3.63502,3.79784,75.0277,0.392605
+coupled TEC-rod (whole record replayed),3.70224,3.20605,72.1913,0.502669

@@ -1,0 +1,47 @@
+Raw data file: angstrom_20261117-000509.csv
+Created: 2026-11-17T00:05:09
+Serial port: /dev/cu.usbmodem1101 at 115200 baud
+Arduino sketch: arduino/module_08_angstrom_controller/module_08_angstrom_controller.ino
+Python GUI: python/module_08_angstrom_gui.py
+Git commit: 34364ac +uncommitted changes
+Record format and units: see data/module_08/README.md. time_ms is the Arduino clock since its last reset; *_C in degrees C; PWM in counts, cooling negative; nan = field not used in this control mode.
+Temperatures are raw readings (no calibration corrections).
+Rod: 6061-T6, d = 12.70 mm, overall length 28.66 cm, analysis length L (first hole to tip) 26.90 cm (Module 7).
+Channel map (x from the first thermistor hole, +/- 1.3 mm):
+  TEC_C: TEC, input A0, TEC base
+  T1_C: T1, input A1, x = 0.0 cm
+  T2_C: T2, input A2, x = 2.4 cm
+  T3_C: T3, input A3, x = 5.0 cm
+  T4_C: T4, input A4, x = 7.6 cm
+  T5_C: T5, input A5, x = 10.2 cm
+Events (Arduino time, wall-clock time, then the Arduino step number):
+  [     2.08 s | 00:05:13] step 1: SET AMP 16.0000 (was 16.0000)
+  [     2.26 s | 00:05:13] step 2: SET MEAN 40.0000 (was 40.0000)
+  [     2.32 s | 00:05:13] step 3: MODE MANUAL (was MANUAL; q = 0)
+  [     2.38 s | 00:05:13] step 4: SET FFADD 0.0000 (was 0.0000)
+  [     2.45 s | 00:05:13] step 5: SET PERIOD 100.0000 (was 100.0000)
+  [     2.51 s | 00:05:13] step 6: SET KP 6.0000 (was 6.0000)
+  [     2.57 s | 00:05:13] step 7: SET KI 0.0400 (was 0.0400)
+  [     2.63 s | 00:05:13] step 8: SET UMAX 255.0000 (was 255.0000)
+  [     2.71 s | 00:05:13] step 9: SET RATIO 2.8200 (was 2.8200)
+  [     2.75 s | 00:05:13] step 10: SET CHIH 0.4850 (was 0.4850)
+  [     2.81 s | 00:05:13] step 11: SET TROOM 22.0000 (was 22.0000)
+  [     2.87 s | 00:05:13] step 12: SET PWMOFF 0.0000 (was 0.0000)
+  [     2.93 s | 00:05:13] step 13: SET PWMAMP 50.0000 (was 50.0000)
+  [     2.99 s | 00:05:14] step 14: SET MANUAL 0.0000 (was 0.0000)
+  [     3.06 s | 00:05:14] step 15: SET T1LIMIT 56.0000 (was 56.0000)
+  [     3.13 s | 00:05:14] step 16: SET TECLIMIT 60.0000 (was 60.0000)
+  [     3.17 s | 00:05:14] step 16: CONFIG mode=MANUAL Ta_C=40.00 Tb_C=16.00 period_s=100.0 Kp=6.000 Ki=0.0400 u_max=255 r=2.820 chi_H=0.4850 T_room_C=22.00 u_a=0.0 u_b=50.0 manual_pwm=0 ff_add=0 T1_limit_C=56.00 TEC_limit_C=60.00
+  [     7.10 s | 00:05:18] SCHEDULE START s18_5_7_control.csv (6 rows)
+  [     7.10 s | 00:05:18] SCHEDULE row 1/6: room_before [baseline] OFF, for 300 s
+  [     7.70 s | 00:05:18] step 17: STOP (output 0); q = 0.00
+  [   308.86 s | 00:10:19] SCHEDULE room_before done: step 17, 8-309 s, channel spread 0.22 C; row 2/6: s18_6_ff100 [control] FF, MEAN=40, AMP=16, PERIOD=100, settled on TEC + 5 cycles (min 300 s, max 2400 s)
+  [   308.86 s | 00:10:20] SCHEDULE T_room set to 21.91 C (mean of the six channels during room_before)
+  [   309.47 s | 00:10:20] step 18: MODE FF (was MANUAL; q = 0)
+  [   309.76 s | 00:10:20] step 19: SET TROOM 21.9100 (was 22.0000)
+  [   309.86 s | 00:10:21] step 20: START mode=FF Ta_C=40.00 Tb_C=16.00 period_s=100.0 Kp=6.000 Ki=0.0400 u_max=255 r=2.820 chi_H=0.4850 T_room_C=21.91 u_a=0.0 u_b=50.0 manual_pwm=0 ff_add=0 T1_limit_C=56.00 TEC_limit_C=60.00
+  [   602.86 s | 00:15:14] step 21: TIMEOUT: no command for 3.0 s. Both H-bridge outputs set to 0; send START to resume.
+  [   603.81 s | 00:15:15] SCHEDULE run_state TIMEOUT during s18_6_ff100: schedule stopped
+  [   603.81 s | 00:15:15] SCHEDULE ABORTED: run_state TIMEOUT during s18_6_ff100: schedule stopped
+  [   604.39 s | 00:15:15] step 22: STOP (output 0); q = 0.00
+  [ 30165.04 s | 08:28:00] GUI closed (STOP sent)

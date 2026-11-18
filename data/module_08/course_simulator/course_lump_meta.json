@@ -1,0 +1,166 @@
+{
+  "url": "https://sethfraden.github.io/Phys39F26-course/simulators/angstrom-six-sensor/?s18=3",
+  "fetched": "2026-11-18T02:14:38.597Z",
+  "cases": [
+    {
+      "label": "s18_3_P100_chic0.23",
+      "lump": {
+        "mode": "lumped",
+        "room": 22,
+        "initial": 22,
+        "tau": 80,
+        "heat": 0.46,
+        "cool": 0.23
+      },
+      "drive": {
+        "manual": true,
+        "raw": 0,
+        "rev": false,
+        "wave": "sine",
+        "offset": 0,
+        "amplitude": 50,
+        "period": 100
+      }
+    },
+    {
+      "label": "s18_3_P100_chic0.46",
+      "lump": {
+        "mode": "lumped",
+        "room": 22,
+        "initial": 22,
+        "tau": 80,
+        "heat": 0.46,
+        "cool": 0.46
+      },
+      "drive": {
+        "manual": true,
+        "raw": 0,
+        "rev": false,
+        "wave": "sine",
+        "offset": 0,
+        "amplitude": 50,
+        "period": 100
+      }
+    },
+    {
+      "label": "s18_3_P200_chic0.23",
+      "lump": {
+        "mode": "lumped",
+        "room": 22,
+        "initial": 22,
+        "tau": 80,
+        "heat": 0.46,
+        "cool": 0.23
+      },
+      "drive": {
+        "manual": true,
+        "raw": 0,
+        "rev": false,
+        "wave": "sine",
+        "offset": 0,
+        "amplitude": 50,
+        "period": 200
+      }
+    },
+    {
+      "label": "s18_3_P200_chic0.46",
+      "lump": {
+        "mode": "lumped",
+        "room": 22,
+        "initial": 22,
+        "tau": 80,
+        "heat": 0.46,
+        "cool": 0.46
+      },
+      "drive": {
+        "manual": true,
+        "raw": 0,
+        "rev": false,
+        "wave": "sine",
+        "offset": 0,
+        "amplitude": 50,
+        "period": 200
+      }
+    },
+    {
+      "label": "s18_3_P300_chic0.23",
+      "lump": {
+        "mode": "lumped",
+        "room": 22,
+        "initial": 22,
+        "tau": 80,
+        "heat": 0.46,
+        "cool": 0.23
+      },
+      "drive": {
+        "manual": true,
+        "raw": 0,
+        "rev": false,
+        "wave": "sine",
+        "offset": 0,
+        "amplitude": 50,
+        "period": 300
+      }
+    },
+    {
+      "label": "s18_3_P300_chic0.46",
+      "lump": {
+        "mode": "lumped",
+        "room": 22,
+        "initial": 22,
+        "tau": 80,
+        "heat": 0.46,
+        "cool": 0.46
+      },
+      "drive": {
+        "manual": true,
+        "raw": 0,
+        "rev": false,
+        "wave": "sine",
+        "offset": 0,
+        "amplitude": 50,
+        "period": 300
+      }
+    },
+    {
+      "label": "s18_4_zero100",
+      "lump": {
+        "mode": "lumped",
+        "room": 21.73,
+        "initial": 21.73,
+        "tau": 59.1,
+        "heat": 0.4115,
+        "cool": 0.1732
+      },
+      "drive": {
+        "manual": true,
+        "raw": 0,
+        "rev": false,
+        "wave": "sine",
+        "offset": 0,
+        "amplitude": 50,
+        "period": 100
+      }
+    },
+    {
+      "label": "s18_4_pos100",
+      "lump": {
+        "mode": "lumped",
+        "room": 21.73,
+        "initial": 21.73,
+        "tau": 59.1,
+        "heat": 0.4115,
+        "cool": 0.1732
+      },
+      "drive": {
+        "manual": true,
+        "raw": 0,
+        "rev": false,
+        "wave": "sine",
+        "offset": 55,
+        "amplitude": 50,
+        "period": 100
+      }
+    }
+  ]
+}

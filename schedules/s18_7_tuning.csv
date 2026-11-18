@@ -1,0 +1,7 @@
+label,kind,mode,period_s,Ta_C,Tb_C,Kp,Ki,u_a,u_b,manual_pwm,T_room_C,settle_on,cycles_after_settle,min_s,max_s,limit_rise_C,max_spread_C,notes
+# S18.7 PI tuning. Predictions of the one-lump model (chi 0.41 C/PWM and tau 60 s from S18.3-S18.4; 2 s delay) in the notes column.,,,,,,,,,,,,,,,,,,
+s18_7_pi100_t1,control,PI,100,40,16,15,0.15,,,,,TEC,5,300,3000,,,S18.7 tuning 1: model ratio 0.86 lag 32 deg; cooling PWM near 255
+s18_7_pi100_t2,control,PI,100,40,16,30,0.3,,,,,TEC,5,300,3000,,,S18.7 tuning 2: model ratio 0.96 lag 18 deg but the cooling demand exceeds 255 (saturates): tests the actuator limit
+s18_7_pi100_tb10,control,PI,100,40,10,30,0.3,,,,,TEC,5,300,3000,,,Tb = 10 C at 100 s (Stage 4 suggestion): model ratio 0.96 lag 18 deg without saturation
+s18_7_pi200_sel,control,PI,200,40,16,30,0.3,,,,,TEC,5,600,4000,,,S18.7 selected gains at 200 s: model ratio 0.97 lag 9 deg
+s18_7_pi300_sel,control,PI,300,40,16,30,0.3,,,,,TEC,5,900,6000,,,S18.7 selected gains at 300 s: model ratio 0.97 lag 6.5 deg

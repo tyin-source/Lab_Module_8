@@ -1,0 +1,18 @@
+Python replica (python/analysis/course_simulator_replica.py) against the browser runs of the course page
+(data/module_08/course_simulator/; browser CSVs rounded to 1e-4 C coupled, 1e-6 C one-lump)
+  s18_3_P100_chic0.23: mean - room 3.661 C, amplitude 3.366 C, lag 78.7 deg, residual 0.240 C; max |replica - browser| 5.0e-07 C
+  s18_3_P100_chic0.46: mean - room 0.000 C, amplitude 4.488 C, lag 78.7 deg, residual 0.000 C; max |replica - browser| 5.0e-07 C
+  s18_3_P200_chic0.23: mean - room 3.661 C, amplitude 6.377 C, lag 68.3 deg, residual 0.473 C; max |replica - browser| 5.0e-07 C
+  s18_3_P200_chic0.46: mean - room 0.000 C, amplitude 8.503 C, lag 68.3 deg, residual 0.000 C; max |replica - browser| 5.0e-07 C
+  s18_3_P300_chic0.23: mean - room 3.661 C, amplitude 8.840 C, lag 59.2 deg, residual 0.695 C; max |replica - browser| 5.0e-07 C
+  s18_3_P300_chic0.46: mean - room 0.000 C, amplitude 11.787 C, lag 59.2 deg, residual 0.000 C; max |replica - browser| 5.0e-07 C
+  s18_3_P300_equal_startup: waiting (startup)
+  s18_4_zero100: mean - room 3.793 C, amplitude 3.801 C, lag 74.9 deg, residual 0.335 C; max |replica - browser| 5.0e-07 C
+  s18_4_pos100: mean - room 22.632 C, amplitude 5.350 C, lag 74.9 deg, residual 0.000 C; max |replica - browser| 5.0e-07 C
+  s19_p100: 14400 s simulated; max |replica - browser| 5.0e-05 C over 14400 records
+  s19_pi100: 14400 s simulated; max |replica - browser| 5.0e-05 C over 14400 records
+  s19_pi100_adj: 14400 s simulated; max |replica - browser| 5.0e-05 C over 14400 records
+  pi200: 14400 s simulated; max |replica - browser| 5.0e-05 C over 14400 records
+  pi300: 18000 s simulated; max |replica - browser| 5.0e-05 C over 18000 records
+  pi400: 18000 s simulated; max |replica - browser| 5.0e-05 C over 18000 records
+  pi500: 18000 s simulated; max |replica - browser| 5.0e-05 C over 18000 records

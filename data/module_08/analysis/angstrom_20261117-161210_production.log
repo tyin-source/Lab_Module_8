@@ -1,0 +1,73 @@
+T_inf per channel from /Users/tianhuan_5000/Documents/GitHub/__Lab_Module_8__/data/module_08/angstrom_20261117-161210.csv:6.1,606.6
+
+=== p300: angstrom_20261117-161210.csv, step 23, period 300 s, 2108-3907 s, 6 cycles (selected)
+| Sensor | x (cm) | a (C) | B (C) | phi (rad) | resid amp (C) | status | finite amp / phase corr |
+| --- | ---: | ---: | ---: | ---: | ---: | --- | --- |
+| T1 | 0.0 | 35.81 ± 0.01 | 7.259 ± 0.009 | -2.388 ± 0.001 | 0.143 | retained | +0.0% / +0.000 rad |
+| T2 | 2.4 | 34.30 ± 0.01 | 5.294 ± 0.010 | -2.658 ± 0.002 | 0.149 | retained | +0.0% / -0.001 rad |
+| T3 | 5.0 | 33.29 ± 0.00 | 3.883 ± 0.006 | -2.951 ± 0.002 | 0.099 | retained | -0.0% / -0.004 rad (exceeds uncertainty) |
+| T4 | 7.6 | 32.36 ± 0.01 | 2.823 ± 0.009 | +3.042 ± 0.003 | 0.134 | retained | -0.4% / -0.007 rad (exceeds uncertainty) |
+| T5 | 10.2 | 31.50 ± 0.00 | 2.026 ± 0.005 | +2.751 ± 0.003 | 0.133 | retained | -1.4% / -0.009 rad (exceeds uncertainty) |
+q  = 12.423 ± 0.201 1/m (chi2/dof 0.27), 1/q  = 8.05 ± 0.13 cm
+q' = 11.218 ± 0.182 1/m (chi2/dof 0.0056), 1/q' = 8.91 ± 0.14 cm
+kappa = 7.514e-05 ± 1.7e-06 m^2/s,  nu = 0.002141 ± 0.00048 1/s
+finite insulated-tip spatial fit (model check): q = 12.293 ± 0.211, q' = 11.321 ± 0.191 1/m; kappa = 7.525e-05 ± 1.8e-06 m^2/s, nu = 0.001727 ± 0.00051 1/s (chi2/dof 0.15)
+(with rho = 2700 kg/m^3, c = 896 J/(kg K): k = 181.8 ± 4.2 W/(m K), h = 16.4 ± 3.7 W/(m^2 K))
+checks: Bi_perp = 2.87e-04, q'R = 0.071, largest finite-rod correction 1.41% in amplitude, 0.0088 rad in phase
+used: finite fit, kappa = 7.525e-05 ± 1.8e-06 m^2/s, nu = 0.001727 ± 0.00051 1/s; largest residual drift 0.019 C
+mean profile: m = 4.949 ± 0.051 1/m (chi2/dof 1.9); sqrt(nu/kappa) = 4.791 1/m; Module 7: 4.9 ± 0.04 1/m
+notes: auto run
+figures: /Users/tianhuan_5000/Documents/GitHub/__Lab_Module_8__/docs/figures/module_08/angstrom_p300_fits.png
+         /Users/tianhuan_5000/Documents/GitHub/__Lab_Module_8__/docs/figures/module_08/angstrom_p300_profile_theory.png
+
+=== p400: angstrom_20261117-161210.csv, step 24, period 400 s, 5115-7515 s, 6 cycles (selected)
+| Sensor | x (cm) | a (C) | B (C) | phi (rad) | resid amp (C) | status | finite amp / phase corr |
+| --- | ---: | ---: | ---: | ---: | ---: | --- | --- |
+| T1 | 0.0 | 35.85 ± 0.01 | 7.954 ± 0.010 | -0.652 ± 0.001 | 0.189 | retained | +0.0% / -0.000 rad |
+| T2 | 2.4 | 34.34 ± 0.01 | 6.002 ± 0.010 | -0.882 ± 0.002 | 0.169 | retained | -0.1% / -0.002 rad (exceeds uncertainty) |
+| T3 | 5.0 | 33.34 ± 0.01 | 4.563 ± 0.009 | -1.131 ± 0.002 | 0.139 | retained | -0.5% / -0.005 rad (exceeds uncertainty) |
+| T4 | 7.6 | 32.41 ± 0.01 | 3.436 ± 0.010 | -1.378 ± 0.003 | 0.152 | retained | -1.3% / -0.005 rad (exceeds uncertainty) |
+| T5 | 10.2 | 31.55 ± 0.01 | 2.549 ± 0.009 | -1.632 ± 0.003 | 0.176 | retained | -2.6% / +0.001 rad (exceeds uncertainty) |
+q  = 11.067 ± 0.180 1/m (chi2/dof 0.34), 1/q  = 9.04 ± 0.15 cm
+q' = 9.602 ± 0.157 1/m (chi2/dof 0.024), 1/q' = 10.41 ± 0.17 cm
+kappa = 7.391e-05 ± 1.7e-06 m^2/s,  nu = 0.002239 ± 0.00037 1/s
+finite insulated-tip spatial fit (model check): q = 10.796 ± 0.200, q' = 9.609 ± 0.174 1/m; kappa = 7.571e-05 ± 2e-06 m^2/s, nu = 0.001832 ± 0.00041 1/s (chi2/dof 0.21)
+(with rho = 2700 kg/m^3, c = 896 J/(kg K): k = 178.8 ± 4.1 W/(m K), h = 17.2 ± 2.8 W/(m^2 K))
+checks: Bi_perp = 3.05e-04, q'R = 0.061, largest finite-rod correction 2.59% in amplitude, 0.0052 rad in phase
+used: finite fit, kappa = 7.571e-05 ± 2e-06 m^2/s, nu = 0.001832 ± 0.00041 1/s; largest residual drift 0.074 C
+mean profile: m = 4.927 ± 0.050 1/m (chi2/dof 2); sqrt(nu/kappa) = 4.920 1/m; Module 7: 4.9 ± 0.04 1/m
+notes: auto run; residual drift up to 0.07 C across the fit
+figures: /Users/tianhuan_5000/Documents/GitHub/__Lab_Module_8__/docs/figures/module_08/angstrom_p400_fits.png
+         /Users/tianhuan_5000/Documents/GitHub/__Lab_Module_8__/docs/figures/module_08/angstrom_p400_profile_theory.png
+
+=== p500: angstrom_20261117-161210.csv, step 25, period 500 s, 9525-12525 s, 6 cycles (selected)
+| Sensor | x (cm) | a (C) | B (C) | phi (rad) | resid amp (C) | status | finite amp / phase corr |
+| --- | ---: | ---: | ---: | ---: | ---: | --- | --- |
+| T1 | 0.0 | 35.76 ± 0.01 | 8.435 ± 0.008 | -2.082 ± 0.001 | 0.172 | retained | +0.0% / -0.000 rad |
+| T2 | 2.4 | 34.23 ± 0.01 | 6.507 ± 0.009 | -2.285 ± 0.001 | 0.180 | retained | -0.3% / -0.002 rad (exceeds uncertainty) |
+| T3 | 5.0 | 33.24 ± 0.01 | 5.067 ± 0.009 | -2.506 ± 0.002 | 0.149 | retained | -0.9% / -0.003 rad (exceeds uncertainty) |
+| T4 | 7.6 | 32.30 ± 0.01 | 3.900 ± 0.011 | -2.727 ± 0.003 | 0.163 | retained | -1.9% / +0.001 rad (exceeds uncertainty) |
+| T5 | 10.2 | 31.43 ± 0.01 | 2.967 ± 0.010 | -2.957 ± 0.003 | 0.171 | retained | -3.2% / +0.014 rad (exceeds uncertainty) |
+q  = 10.160 ± 0.166 1/m (chi2/dof 0.37), 1/q  = 9.84 ± 0.16 cm
+q' = 8.560 ± 0.141 1/m (chi2/dof 0.12), 1/q' = 11.68 ± 0.19 cm
+kappa = 7.225e-05 ± 1.7e-06 m^2/s,  nu = 0.002164 ± 0.0003 1/s
+finite insulated-tip spatial fit (model check): q = 9.820 ± 0.187, q' = 8.404 ± 0.159 1/m; kappa = 7.613e-05 ± 2.1e-06 m^2/s, nu = 0.001965 ± 0.00034 1/s (chi2/dof 0.25)
+(with rho = 2700 kg/m^3, c = 896 J/(kg K): k = 174.8 ± 4.1 W/(m K), h = 16.6 ± 2.3 W/(m^2 K))
+checks: Bi_perp = 3.02e-04, q'R = 0.054, largest finite-rod correction 3.18% in amplitude, 0.0139 rad in phase
+used: finite fit, kappa = 7.613e-05 ± 2.1e-06 m^2/s, nu = 0.001965 ± 0.00034 1/s; largest residual drift 0.164 C
+mean profile: m = 4.982 ± 0.051 1/m (chi2/dof 2.1); sqrt(nu/kappa) = 5.080 1/m; Module 7: 4.9 ± 0.04 1/m
+notes: auto run; residual drift up to 0.16 C across the fit
+figures: /Users/tianhuan_5000/Documents/GitHub/__Lab_Module_8__/docs/figures/module_08/angstrom_p500_fits.png
+         /Users/tianhuan_5000/Documents/GitHub/__Lab_Module_8__/docs/figures/module_08/angstrom_p500_profile_theory.png
+
+Semi-infinite two-stage fit (primary) and the values used (--model auto):
+| Interval | Period (s) | Cycles | Sensors | q (1/m) | q' (1/m) | kappa (1e-5 m^2/s) | nu (1e-3 1/s) | model used | kappa used | nu used | m mean fit (1/m) |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | ---: | --- | ---: | ---: | ---: |
+| p300 | 300 | 6 | T1 T2 T3 T4 T5 | 12.42 ± 0.20 | 11.22 ± 0.18 | 7.514 ± 0.172 | 2.141 ± 0.483 | finite | 7.525 ± 0.181 | 1.727 ± 0.508 | 4.95 |
+| p400 | 400 | 6 | T1 T2 T3 T4 T5 | 11.07 ± 0.18 | 9.60 ± 0.16 | 7.391 ± 0.171 | 2.239 ± 0.367 | finite | 7.571 ± 0.196 | 1.832 ± 0.410 | 4.93 |
+| p500 | 500 | 6 | T1 T2 T3 T4 T5 | 10.16 ± 0.17 | 8.56 ± 0.14 | 7.225 ± 0.167 | 2.164 ± 0.296 | finite | 7.613 ± 0.207 | 1.965 ± 0.338 | 4.98 |
+weighted mean kappa = 7.565e-05 ± 1.1e-06; chi2 = 0.10 for 2 dof, p = 0.949
+weighted mean nu = 0.001873 ± 0.00023; chi2 = 0.17 for 2 dof, p = 0.92
+figure: /Users/tianhuan_5000/Documents/GitHub/__Lab_Module_8__/docs/figures/module_08/angstrom_angstrom_20261117-161210_production_frequency.png
+figure: /Users/tianhuan_5000/Documents/GitHub/__Lab_Module_8__/docs/figures/module_08/angstrom_angstrom_20261117-161210_production_lengths.png
+results: /Users/tianhuan_5000/Documents/GitHub/__Lab_Module_8__/data/module_08/analysis/angstrom_angstrom_20261117-161210_production.csv, /Users/tianhuan_5000/Documents/GitHub/__Lab_Module_8__/data/module_08/analysis/angstrom_angstrom_20261117-161210_production_sensors.csv

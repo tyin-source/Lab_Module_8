@@ -1,0 +1,3 @@
+label,file,part,step,t_start_s,t_end_s,settle,exclude,notes
+pilot100,data/module_08/angstrom_20261117-132324.csv,,22,4613.8,5113.8,no,,auto schedule; PI; NOT SETTLED (max_s reached); S18.9 pilot; settling on T1-T3
+pilot200,data/module_08/angstrom_20261117-132324.csv,,23,7914.9,8919.6,no,,auto schedule; PI; settled; S18.10 pilot

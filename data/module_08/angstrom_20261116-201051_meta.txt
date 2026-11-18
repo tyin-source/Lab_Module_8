@@ -1,0 +1,18 @@
+Raw data file: angstrom_20261116-201051.csv
+Created: 2026-11-16T20:10:51
+Serial port: /dev/cu.usbmodem1101 at 115200 baud
+Arduino sketch: arduino/module_08_angstrom_controller/module_08_angstrom_controller.ino
+Python GUI: python/module_08_angstrom_gui.py
+Git commit: c3dc6ad +uncommitted changes
+Record format and units: see data/module_08/README.md. time_ms is the Arduino clock since its last reset; *_C in degrees C; PWM in counts, cooling negative; nan = field not used in this control mode.
+Temperatures are raw readings (no calibration corrections).
+Rod: 6061-T6, d = 12.70 mm, overall length 28.66 cm, analysis length L (first hole to tip) 26.90 cm (Module 7).
+Channel map (x from the first thermistor hole, +/- 1.3 mm):
+  TEC_C: TEC, input A0, TEC base
+  T1_C: T1, input A1, x = 0.0 cm
+  T2_C: T2, input A2, x = 2.4 cm
+  T3_C: T3, input A3, x = 5.0 cm
+  T4_C: T4, input A4, x = 7.6 cm
+  T5_C: T5, input A5, x = 10.2 cm
+Events (Arduino time, wall-clock time, then the Arduino step number):
+  [      ---   | 20:11:11] GUI closed (STOP sent)

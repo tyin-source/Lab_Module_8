@@ -1,0 +1,8 @@
+label,kind,mode,period_s,Ta_C,Tb_C,Kp,Ki,u_a,u_b,manual_pwm,T_room_C,settle_on,cycles_after_settle,min_s,max_s,limit_rise_C,max_spread_C,notes
+# Stage 5 with the selected control (S18.7): PI Kp = 30 PWM/C, Ki = 0.3 PWM/(C s), Ta = 40 C, Tb = 16 C. Remove rows for periods already qualified by the pilots. Start with the rod at room temperature.,,,,,,,,,,,,,,,,,,
+room_before,baseline,OFF,,,,,,,,,,,,600,,,1.0,TEC off; room baseline (rod at room temperature) for the mean profile
+#p100 (qualified by the pilot; see intervals_production.csv),production,PI,100,40,16,30,0.3,,,,,T1 T2 T3,6,300,4800,,,Stage 5
+#p200 (qualified by the pilot),production,PI,200,40,16,30,0.3,,,,,T1 T2 T3,6,600,6000,,,Stage 5
+p300,production,PI,300,40,16,30,0.3,,,,,T1 T2 T3,6,900,7200,,,Stage 5
+p400,production,PI,400,40,16,30,0.3,,,,,T1 T2 T3,6,1200,8400,,,Stage 5
+p500,production,PI,500,40,16,30,0.3,,,,,T1 T2 T3,6,1500,9600,,,Stage 5

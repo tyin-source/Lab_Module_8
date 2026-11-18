@@ -1,0 +1,10 @@
+label,kind,mode,period_s,Ta_C,Tb_C,Kp,Ki,u_a,u_b,manual_pwm,T_room_C,settle_on,cycles_after_settle,min_s,max_s,notes
+# The room baseline sets T_room for the feedforward (start with the rod at room temperature).,,,,,,,,,,,,,,,,
+room_before,baseline,OFF,,,,,,,,,,,,300,,TEC off; sets T_room
+s18_6_ff100,control,FF,100,40,16,,,,,,,TEC,5,300,2400,S18.6 feedforward u_a = (Ta - T_room)/chi_h; u_b = Tb/chi_h
+s18_7_p100,control,P,100,40,16,6,0,,,,,TEC,5,300,2400,S18.7 P only
+s18_7_pi100,control,PI,100,40,16,6,0.04,,,,,TEC,5,300,3000,S18.7 initial PI with the same Kp
+# Tuning trials: copy the row above with new Kp and Ki and remove the #.,,,,,,,,,,,,,,,,
+#s18_7_pi100_t1,control,PI,100,40,16,20,0.2,,,,,TEC,5,300,3000,S18.7 PI tuning trial 1
+s18_7_pi200,control,PI,200,40,16,,,,,,,TEC,5,600,4000,S18.7 previous gains at 200 s
+s18_7_pi300,control,PI,300,40,16,,,,,,,TEC,5,900,6000,S18.7 previous gains at 300 s

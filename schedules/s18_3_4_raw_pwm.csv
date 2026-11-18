@@ -1,0 +1,10 @@
+label,kind,mode,period_s,Ta_C,Tb_C,Kp,Ki,u_a,u_b,manual_pwm,T_room_C,settle_on,cycles_after_settle,min_s,max_s,limit_rise_C,max_spread_C,notes
+check_channels,check,OFF,,,,,,,,,,,,120,,,1.0,S18.1 channel agreement with the TEC off: six channels within 1 C
+test_tec_limit,check,TEST_TEC_LIMIT,,,,,,,,40,,,,,300,2,,S18.1 TEC software limit: lowered to TEC + 2 C must stop the run
+test_t1_limit,check,TEST_T1_LIMIT,,,,,,,,40,,,,,600,2,,S18.1 rod-base limit: lowered to T1 + 2 C must stop the run
+cool_down,check,OFF,,,,,,,,,,,,1200,,,,TEC off after the limit tests
+room_before,baseline,OFF,,,,,,,,,,,,300,,,1.0,room baseline; its mean becomes T_room for the later rows
+s18_3_pwm300,control,PWM_SINE,300,,,,,0,50,,,TEC,5,900,5400,,,S18.3 zero-centered; u_b = 50; first heating with the new sketch: watch the first cycles
+s18_3_pwm200,control,PWM_SINE,200,,,,,0,50,,,TEC,5,600,3600,,,S18.3 same u_b
+s18_3_pwm100,control,PWM_SINE,100,,,,,0,50,,,TEC,5,300,2400,,,S18.3 same u_b; baseline for S18.4
+s18_4_pos100,control,PWM_SINE,100,,,,,55,50,,,TEC,5,300,2400,,,S18.4 positive-only (u_a > u_b); adjust u_a for a mean near 40 C

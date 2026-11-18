@@ -1,0 +1,14 @@
+name,value,sigma,unit,source
+kappa,7.566018606823197e-05,8.494618762125911e-07,m^2/s,angstrom_production.csv weighted mean
+nu,0.001911756306822656,0.00021913031372140343,1/s,angstrom_production.csv weighted mean
+contact_m,0.045660984267648516,0.0013999481152500196,m,TEC->T1 transfer of s18_7_pi100_t2 s18_7_pi200_sel s18_7_pi300_sel
+x1_m,0.020475402353078147,0.0007276282490065553,m,same fit; geometric TEC face to hole 1 = 0.0176 m
+chi_h,0.4954960471750474,0.017280223415462852,C/PWM,"replay of the raw-PWM run, TEC channel"
+chi_c,0.19787503961484584,0.01316788452637018,C/PWM,same
+tau_s,77.72247527061518,2.8881258693796155,s,same
+g,1.1775476078098017,0.22160373256090066,,same (G/H)
+replay_rms_C,0.23302511566819276,,C,TEC rms residual of that fit
+one_lump_chi_h,0.4115152866049573,,C/PWM,S18.4 static rise
+one_lump_chi_c,0.17320674777330622,,C/PWM,S18.3 mean shift
+one_lump_tau_s,59.09961357127355,,s,mean S18.3 tau_eff
+mean_ratio_T1_TEC_model,0.7576973299381613,,,static (T1-room)/(TEC-room)

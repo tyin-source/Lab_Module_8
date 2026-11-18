@@ -1,0 +1,32 @@
+Raw data file: angstrom_20261116-204536.csv
+Created: 2026-11-16T20:45:36
+Serial port: /dev/cu.usbmodem1101 at 115200 baud
+Arduino sketch: arduino/module_08_angstrom_controller/module_08_angstrom_controller.ino
+Python GUI: python/module_08_angstrom_gui.py
+Git commit: 0e97e71 +uncommitted changes
+Record format and units: see data/module_08/README.md. time_ms is the Arduino clock since its last reset; *_C in degrees C; PWM in counts, cooling negative; nan = field not used in this control mode.
+Temperatures are raw readings (no calibration corrections).
+Rod: 6061-T6, d = 12.70 mm, overall length 28.66 cm, analysis length L (first hole to tip) 26.90 cm (Module 7).
+Channel map (x from the first thermistor hole, +/- 1.3 mm):
+  TEC_C: TEC, input A0, TEC base
+  T1_C: T1, input A1, x = 0.0 cm
+  T2_C: T2, input A2, x = 2.4 cm
+  T3_C: T3, input A3, x = 5.0 cm
+  T4_C: T4, input A4, x = 7.6 cm
+  T5_C: T5, input A5, x = 10.2 cm
+Events (Arduino time, wall-clock time, then the Arduino step number):
+  [     2.07 s | 20:45:39] step 1: SET AMP 16.0000 (was 16.0000)
+  [     2.21 s | 20:45:39] step 2: SET MEAN 40.0000 (was 40.0000)
+  [     2.27 s | 20:45:39] step 3: MODE MANUAL (was MANUAL; q = 0)
+  [     2.34 s | 20:45:40] step 4: SET FFADD 0.0000 (was 0.0000)
+  [     2.39 s | 20:45:40] step 5: SET PERIOD 100.0000 (was 100.0000)
+  [     2.45 s | 20:45:40] step 6: SET KP 6.0000 (was 6.0000)
+  [     2.51 s | 20:45:40] step 7: SET KI 0.0400 (was 0.0400)
+  [     2.57 s | 20:45:40] step 8: SET UMAX 255.0000 (was 255.0000)
+  [     2.63 s | 20:45:40] step 9: SET RATIO 2.8200 (was 2.8200)
+  [     2.70 s | 20:45:40] step 10: SET CHIH 0.4850 (was 0.4850)
+  [     2.76 s | 20:45:40] step 11: SET TROOM 22.0000 (was 22.0000)
+  [     2.82 s | 20:45:40] step 12: SET PWMOFF 0.0000 (was 0.0000)
+  [     2.88 s | 20:45:40] step 13: SET PWMAMP 50.0000 (was 50.0000)
+  [     2.94 s | 20:45:40] step 14: SET MANUAL 0.0000 (was 0.0000)
+  [     3.00 s | 20:45:40] step 14: CONFIG mode=MANUAL Ta_C=40.00 Tb_C=16.00 period_s=100.0 Kp=6.000 Ki=0.0400 u_max=255 r=2.820 chi_H=0.4850 T_room_C=22.00 u_a=0.0 u_b=50.0 manual_pwm=0 ff_add=0

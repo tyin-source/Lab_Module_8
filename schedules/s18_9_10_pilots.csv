@@ -1,0 +1,5 @@
+label,kind,mode,period_s,Ta_C,Tb_C,Kp,Ki,u_a,u_b,manual_pwm,T_room_C,settle_on,cycles_after_settle,min_s,max_s,limit_rise_C,max_spread_C,notes
+# S18.9-S18.10 pilots with the selected control (S18.7): PI Kp = 30 PWM/C, Ki = 0.3 PWM/(C s), Ta = 40 C, Tb = 16 C. Start with the rod at room temperature.,,,,,,,,,,,,,,,,,,
+room_before,baseline,OFF,,,,,,,,,,,,300,,,1.0,TEC off; room baseline for the mean profile (T_inf per channel)
+pilot100,pilot,PI,100,40,16,30,0.3,,,,,T1 T2 T3,5,300,4800,,,S18.9 pilot; settling on T1-T3
+pilot200,pilot,PI,200,40,16,30,0.3,,,,,T1 T2 T3,5,600,6000,,,S18.10 pilot

@@ -1,0 +1,10 @@
+case,Kp_PWM_per_C,Ki_PWM_per_Cs,Kp_percent_per_C,Ki_percent_per_Cs,source,mean_error_C,amp_ratio,lag_deg,rms_tracking_C,saturated_fraction,pwm_min,pwm_max,T1_amp_C
+P only,6,0,2.35294,0,course simulator (feedback T0),-6.03223,0.559859,24.7334,8.62235,0,-16.9032,87.9131,6.20091
+P only,6,0,,,measured (feedback TEC),-4.95178,0.481539,47.0358,10.0638,0,,,2.34855
+P only,6,0,,,our model (feedback TEC),-5.02744,0.448396,47.8081,10.2288,0,,,2.18483
+"PI, same Kp",6,0.04,2.35294,0.0156863,course simulator (feedback T0),1.20025e-10,0.590042,26.9299,6.15674,0,0.752599,106.21,6.53522
+"PI, same Kp",6,0.04,,,measured (feedback TEC),-0.0103637,0.500684,52.3607,9.22424,0,,,2.47925
+"PI, same Kp",6,0.04,,,our model (feedback TEC),3.79642e-05,0.465766,52.1866,9.2554,0,,,2.26947
+"PI, targeted adjustment",30,0.3,11.7647,0.117647,course simulator (feedback T0),-1.53098e-05,0.90408,8.14074,1.87602,0,-36.3726,128.166,10.0135
+"PI, targeted adjustment",30,0.3,,,measured (feedback TEC),0.0847965,0.937146,15.4308,3.36591,0.0040404,,,4.61141
+"PI, targeted adjustment",30,0.3,,,our model (feedback TEC),0.840085,0.903225,16.3746,3.66749,0.13,,,4.401

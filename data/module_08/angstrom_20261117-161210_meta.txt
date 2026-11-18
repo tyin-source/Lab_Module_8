@@ -1,0 +1,53 @@
+Raw data file: angstrom_20261117-161210.csv
+Created: 2026-11-17T16:12:10
+Serial port: /dev/cu.usbmodem1101 at 115200 baud
+Arduino sketch: arduino/module_08_angstrom_controller/module_08_angstrom_controller.ino
+Python GUI: python/module_08_angstrom_gui.py
+Git commit: 6c626ac +uncommitted changes
+Record format and units: see data/module_08/README.md. time_ms is the Arduino clock since its last reset; *_C in degrees C; PWM in counts, cooling negative; nan = field not used in this control mode.
+Temperatures are raw readings (no calibration corrections).
+Rod: 6061-T6, d = 12.70 mm, overall length 28.66 cm, analysis length L (first hole to tip) 26.90 cm (Module 7).
+Channel map (x from the first thermistor hole, +/- 1.3 mm):
+  TEC_C: TEC, input A0, TEC base
+  T1_C: T1, input A1, x = 0.0 cm
+  T2_C: T2, input A2, x = 2.4 cm
+  T3_C: T3, input A3, x = 5.0 cm
+  T4_C: T4, input A4, x = 7.6 cm
+  T5_C: T5, input A5, x = 10.2 cm
+Events (Arduino time, wall-clock time, then the Arduino step number):
+  [     2.07 s | 16:12:13] step 1: SET AMP 16.0000 (was 16.0000)
+  [     2.13 s | 16:12:13] step 2: SET MEAN 40.0000 (was 40.0000)
+  [     2.24 s | 16:12:14] step 3: MODE MANUAL (was MANUAL; q = 0)
+  [     2.25 s | 16:12:14] step 4: SET FFADD 0.0000 (was 0.0000)
+  [     2.31 s | 16:12:14] step 5: SET PERIOD 100.0000 (was 100.0000)
+  [     2.38 s | 16:12:14] step 6: SET KP 6.0000 (was 6.0000)
+  [     2.44 s | 16:12:14] step 7: SET KI 0.0400 (was 0.0400)
+  [     2.49 s | 16:12:14] step 8: SET UMAX 255.0000 (was 255.0000)
+  [     2.55 s | 16:12:14] step 9: SET RATIO 2.8200 (was 2.8200)
+  [     2.61 s | 16:12:14] step 10: SET CHIH 0.4850 (was 0.4850)
+  [     2.67 s | 16:12:14] step 11: SET TROOM 22.0000 (was 22.0000)
+  [     2.74 s | 16:12:14] step 12: SET PWMOFF 0.0000 (was 0.0000)
+  [     2.80 s | 16:12:14] step 13: SET PWMAMP 50.0000 (was 50.0000)
+  [     2.86 s | 16:12:14] step 14: SET MANUAL 0.0000 (was 0.0000)
+  [     2.92 s | 16:12:14] step 15: SET T1LIMIT 56.0000 (was 56.0000)
+  [     2.99 s | 16:12:14] step 16: SET TECLIMIT 60.0000 (was 60.0000)
+  [     3.04 s | 16:12:14] step 16: CONFIG mode=MANUAL Ta_C=40.00 Tb_C=16.00 period_s=100.0 Kp=6.000 Ki=0.0400 u_max=255 r=2.820 chi_H=0.4850 T_room_C=22.00 u_a=0.0 u_b=50.0 manual_pwm=0 ff_add=0 T1_limit_C=56.00 TEC_limit_C=60.00
+  [     5.09 s | 16:12:17] SCHEDULE START production.csv (4 rows)
+  [     5.09 s | 16:12:17] SCHEDULE row 1/4: room_before [baseline] OFF, for 600 s, channel spread < 1 C
+  [     5.26 s | 16:12:17] step 17: STOP (output 0); q = 0.00
+  [   606.60 s | 16:22:18] SCHEDULE room_before done: step 17, 6-607 s, channel spread 0.14 C; row 2/4: p300 [production] PI, MEAN=40, AMP=16, PERIOD=300, KP=30, KI=0.3, settled on T1/T2/T3 + 6 cycles (min 900 s, max 7200 s)
+  [   606.60 s | 16:22:18] SCHEDULE T_room set to 22.88 C (mean of the six channels during room_before)
+  [   606.77 s | 16:22:18] step 18: MODE PI (was MANUAL; q = 0)
+  [   606.85 s | 16:22:18] step 19: SET PERIOD 300.0000 (was 100.0000)
+  [   606.91 s | 16:22:18] step 20: SET KP 30.0000 (was 6.0000)
+  [   606.95 s | 16:22:18] step 21: SET KI 0.3000 (was 0.0400)
+  [   607.01 s | 16:22:18] step 22: SET TROOM 22.8800 (was 22.0000)
+  [   607.07 s | 16:22:19] step 23: START mode=PI Ta_C=40.00 Tb_C=16.00 period_s=300.0 Kp=30.000 Ki=0.3000 u_max=255 r=2.820 chi_H=0.4850 T_room_C=22.88 u_a=0.0 u_b=50.0 manual_pwm=0 ff_add=0 T1_limit_C=56.00 TEC_limit_C=60.00
+  [  3914.23 s | 17:17:26] SCHEDULE p300 done: step 23, 2108-3914 s, settled; row 3/4: p400 [production] PI, MEAN=40, AMP=16, PERIOD=400, KP=30, KI=0.3, settled on T1/T2/T3 + 6 cycles (min 1200 s, max 8400 s)
+  [  3914.30 s | 17:17:26] step 24: SET PERIOD 400.0000 (was 300.0000)
+  [  7523.91 s | 18:17:36] SCHEDULE p400 done: step 24, 5115-7524 s, settled; row 4/4: p500 [production] PI, MEAN=40, AMP=16, PERIOD=500, KP=30, KI=0.3, settled on T1/T2/T3 + 6 cycles (min 1500 s, max 9600 s)
+  [  7523.99 s | 18:17:36] step 25: SET PERIOD 500.0000 (was 400.0000)
+  [ 12535.85 s | 19:41:09] SCHEDULE p500 done: step 25, 9525-12536 s, settled; schedule complete
+  [ 12535.85 s | 19:41:09] ANALYSIS started: /Users/tianhuan_5000/Documents/GitHub/__Lab_Module_8__/python/analysis/module_08_angstrom_fit.py --intervals /Users/tianhuan_5000/Documents/GitHub/__Lab_Module_8__/data/module_08/analysis/intervals_angstrom_20261117-161210_production.csv --name angstrom_20261117-161210_production --out-dir /Users/tianhuan_5000/Documents/GitHub/__Lab_Module_8__/data/module_08/analysis --fig-dir /Users/tianhuan_5000/Documents/GitHub/__Lab_Module_8__/docs/figures/module_08 --baseline /Users/tianhuan_5000/Documents/GitHub/__Lab_Module_8__/data/module_08/angstrom_20261117-161210.csv:6.1,606.6 > angstrom_20261117-161210_production.log
+  [ 12535.89 s | 19:41:09] step 26: STOP (output 0); q = 162.99
+  [ 14033.29 s | 20:06:07] GUI closed (STOP sent)

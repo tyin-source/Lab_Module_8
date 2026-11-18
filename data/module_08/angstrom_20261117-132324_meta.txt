@@ -1,0 +1,50 @@
+Raw data file: angstrom_20261117-132324.csv
+Created: 2026-11-17T13:23:24
+Serial port: /dev/cu.usbmodem1101 at 115200 baud
+Arduino sketch: arduino/module_08_angstrom_controller/module_08_angstrom_controller.ino
+Python GUI: python/module_08_angstrom_gui.py
+Git commit: b41eb33 +uncommitted changes
+Record format and units: see data/module_08/README.md. time_ms is the Arduino clock since its last reset; *_C in degrees C; PWM in counts, cooling negative; nan = field not used in this control mode.
+Temperatures are raw readings (no calibration corrections).
+Rod: 6061-T6, d = 12.70 mm, overall length 28.66 cm, analysis length L (first hole to tip) 26.90 cm (Module 7).
+Channel map (x from the first thermistor hole, +/- 1.3 mm):
+  TEC_C: TEC, input A0, TEC base
+  T1_C: T1, input A1, x = 0.0 cm
+  T2_C: T2, input A2, x = 2.4 cm
+  T3_C: T3, input A3, x = 5.0 cm
+  T4_C: T4, input A4, x = 7.6 cm
+  T5_C: T5, input A5, x = 10.2 cm
+Events (Arduino time, wall-clock time, then the Arduino step number):
+  [     2.07 s | 13:23:28] step 1: SET AMP 16.0000 (was 16.0000)
+  [     2.13 s | 13:23:28] step 2: SET MEAN 40.0000 (was 40.0000)
+  [     2.19 s | 13:23:28] step 3: MODE MANUAL (was MANUAL; q = 0)
+  [     2.28 s | 13:23:28] step 4: SET FFADD 0.0000 (was 0.0000)
+  [     2.31 s | 13:23:28] step 5: SET PERIOD 100.0000 (was 100.0000)
+  [     2.37 s | 13:23:28] step 6: SET KP 6.0000 (was 6.0000)
+  [     2.43 s | 13:23:28] step 7: SET KI 0.0400 (was 0.0400)
+  [     2.49 s | 13:23:28] step 8: SET UMAX 255.0000 (was 255.0000)
+  [     2.55 s | 13:23:28] step 9: SET RATIO 2.8200 (was 2.8200)
+  [     2.61 s | 13:23:28] step 10: SET CHIH 0.4850 (was 0.4850)
+  [     2.67 s | 13:23:28] step 11: SET TROOM 22.0000 (was 22.0000)
+  [     2.74 s | 13:23:28] step 12: SET PWMOFF 0.0000 (was 0.0000)
+  [     2.81 s | 13:23:28] step 13: SET PWMAMP 50.0000 (was 50.0000)
+  [     2.86 s | 13:23:28] step 14: SET MANUAL 0.0000 (was 0.0000)
+  [     2.92 s | 13:23:28] step 15: SET T1LIMIT 56.0000 (was 56.0000)
+  [     2.98 s | 13:23:28] step 16: SET TECLIMIT 60.0000 (was 60.0000)
+  [     3.04 s | 13:23:29] step 16: CONFIG mode=MANUAL Ta_C=40.00 Tb_C=16.00 period_s=100.0 Kp=6.000 Ki=0.0400 u_max=255 r=2.820 chi_H=0.4850 T_room_C=22.00 u_a=0.0 u_b=50.0 manual_pwm=0 ff_add=0 T1_limit_C=56.00 TEC_limit_C=60.00
+  [    10.12 s | 13:23:36] SCHEDULE START s18_9_10_pilots.csv (3 rows)
+  [    10.12 s | 13:23:36] SCHEDULE row 1/3: room_before [baseline] OFF, for 300 s, channel spread < 1 C
+  [    10.88 s | 13:23:36] step 17: STOP (output 0); q = 0.00
+  [   311.90 s | 13:28:37] SCHEDULE room_before done: step 17, 11-312 s, channel spread 0.82 C; row 2/3: pilot100 [pilot] PI, MEAN=40, AMP=16, PERIOD=100, KP=30, KI=0.3, settled on T1/T2/T3 + 5 cycles (min 300 s, max 4800 s)
+  [   311.90 s | 13:28:37] SCHEDULE T_room set to 23.90 C (mean of the six channels during room_before)
+  [   312.11 s | 13:28:38] step 18: MODE PI (was MANUAL; q = 0)
+  [   312.18 s | 13:28:38] step 19: SET KP 30.0000 (was 6.0000)
+  [   312.23 s | 13:28:38] step 20: SET KI 0.3000 (was 0.0400)
+  [   312.29 s | 13:28:38] step 21: SET TROOM 23.9000 (was 22.0000)
+  [   312.37 s | 13:28:38] step 22: START mode=PI Ta_C=40.00 Tb_C=16.00 period_s=100.0 Kp=30.000 Ki=0.3000 u_max=255 r=2.820 chi_H=0.4850 T_room_C=23.90 u_a=0.0 u_b=50.0 manual_pwm=0 ff_add=0 T1_limit_C=56.00 TEC_limit_C=60.00
+  [  5113.85 s | 14:48:40] SCHEDULE pilot100 done: step 22, 4614-5114 s, NOT SETTLED (max_s reached); row 3/3: pilot200 [pilot] PI, MEAN=40, AMP=16, PERIOD=200, KP=30, KI=0.3, settled on T1/T2/T3 + 5 cycles (min 600 s, max 6000 s)
+  [  5113.95 s | 14:48:40] step 23: SET PERIOD 200.0000 (was 100.0000)
+  [  8919.59 s | 15:52:06] SCHEDULE pilot200 done: step 23, 7915-8920 s, settled; schedule complete
+  [  8919.59 s | 15:52:06] ANALYSIS started: /Users/tianhuan_5000/Documents/GitHub/__Lab_Module_8__/python/analysis/module_08_angstrom_fit.py --intervals /Users/tianhuan_5000/Documents/GitHub/__Lab_Module_8__/data/module_08/analysis/intervals_angstrom_20261117-132324_pilot.csv --name angstrom_20261117-132324_pilot --out-dir /Users/tianhuan_5000/Documents/GitHub/__Lab_Module_8__/data/module_08/analysis --fig-dir /Users/tianhuan_5000/Documents/GitHub/__Lab_Module_8__/docs/figures/module_08 --baseline /Users/tianhuan_5000/Documents/GitHub/__Lab_Module_8__/data/module_08/angstrom_20261117-132324.csv:11.1,311.9 > angstrom_20261117-132324_pilot.log
+  [  8919.62 s | 15:52:06] step 24: STOP (output 0); q = 139.41
+  [  9807.75 s | 16:06:55] GUI closed (STOP sent)

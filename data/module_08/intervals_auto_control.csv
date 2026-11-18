@@ -1,0 +1,15 @@
+label,file,part,step,t_start_s,t_end_s,settle,exclude,notes
+s18_3_pwm300,data/module_08/angstrom_20261116-211726.csv,,32,1692.2,3198.5,no,,auto schedule; PWM_SINE; settled; S18.3 zero-centered; u_b = 50; first heating with the new sketch: watch the first cycles
+s18_3_pwm200,data/module_08/angstrom_20261116-211726.csv,,33,3199.5,4203.7,no,,auto schedule; PWM_SINE; settled; S18.3 same u_b
+s18_3_pwm100,data/module_08/angstrom_20261116-211726.csv,,34,4304.8,4807.7,no,,auto schedule; PWM_SINE; settled; S18.3 same u_b; baseline for S18.4
+s18_4_pos100,data/module_08/angstrom_20261116-211726.csv,,35,6408.7,6911.0,no,,auto schedule; PWM_SINE; settled; S18.4 positive-only (u_a > u_b); adjust u_a for a mean near 40 C
+s18_6_ff100,data/module_08/angstrom_20261117-083725.csv,,20,1107.9,1609.9,no,,auto schedule; FF; settled; S18.6 feedforward u_a = (Ta - T_room)/chi_h; u_b = Tb/chi_h
+s18_7_p100,data/module_08/angstrom_20261117-083725.csv,,22,1610.9,2112.9,no,,auto schedule; P; settled; S18.7 P only
+s18_7_pi100,data/module_08/angstrom_20261117-083725.csv,,24,2814.0,3316.2,no,,auto schedule; PI; settled; S18.7 initial PI with the same Kp
+s18_7_pi200,data/module_08/angstrom_20261117-083725.csv,,25,4317.2,5321.5,no,,auto schedule; PI; settled; S18.7 previous gains at 200 s
+s18_7_pi300,data/module_08/angstrom_20261117-083725.csv,,26,5922.5,7428.9,no,,auto schedule; PI; settled; S18.7 previous gains at 300 s
+s18_7_pi100_t1,data/module_08/angstrom_20261117-114802.csv,,20,506.9,1009.0,no,,auto schedule; PI; settled; S18.7 tuning 1: model ratio 0.86 lag 32 deg; cooling PWM near 255
+s18_7_pi100_t2,data/module_08/angstrom_20261117-114802.csv,,22,1410.0,1912.2,no,,auto schedule; PI; settled; S18.7 tuning 2: model ratio 0.96 lag 18 deg but the cooling demand exceeds 255 (saturates): tests the actuator limit
+s18_7_pi100_tb10,data/module_08/angstrom_20261117-114802.csv,,23,2113.2,2615.4,no,,auto schedule; PI; settled; Tb = 10 C at 100 s (Stage 4 suggestion): model ratio 0.96 lag 18 deg without saturation
+s18_7_pi200_sel,data/module_08/angstrom_20261117-114802.csv,,25,2616.4,3620.6,no,,auto schedule; PI; settled; S18.7 selected gains at 200 s: model ratio 0.97 lag 9 deg
+s18_7_pi300_sel,data/module_08/angstrom_20261117-114802.csv,,26,3621.6,5127.9,no,,auto schedule; PI; settled; S18.7 selected gains at 300 s: model ratio 0.97 lag 6.5 deg

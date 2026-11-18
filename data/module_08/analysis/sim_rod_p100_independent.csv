@@ -1,0 +1,7 @@
+label,period_s,sensor,meas_mean_C,sim_mean_C,meas_amp_C,meas_amp_sigma,sim_amp_C,meas_lag_deg,meas_lag_sigma_deg,sim_lag_deg,kappa_nu_source
+p100,100,TEC,40.1405,40.926,14.9873,0.00749413,14.4119,15.4427,0.0286452,16.4776,"kappa, nu from p200, p300, p400, p500 only (independent of p100)"
+p100,100,T1,35.9865,36.7083,4.57689,0.0126703,4.39077,65.013,0.158633,65.2474,"kappa, nu from p200, p300, p400, p500 only (independent of p100)"
+p100,100,T2,34.4943,35.4139,2.74279,0.0138326,2.67274,92.1946,0.289012,92.8397,"kappa, nu from p200, p300, p400, p500 only (independent of p100)"
+p100,100,T3,33.5252,34.2063,1.61252,0.0107832,1.56099,122.056,0.383175,122.737,"kappa, nu from p200, p300, p400, p500 only (independent of p100)"
+p100,100,T4,32.6435,33.1812,0.937055,0.0131871,0.911894,152.037,0.806227,152.645,"kappa, nu from p200, p300, p400, p500 only (independent of p100)"
+p100,100,T5,31.8218,32.3212,0.535918,0.0115368,0.533139,-179.204,1.23318,-177.465,"kappa, nu from p200, p300, p400, p500 only (independent of p100)"

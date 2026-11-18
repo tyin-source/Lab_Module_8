@@ -1,0 +1,7 @@
+label,file,part,step,t_start_s,t_end_s,settle,exclude,notes,baseline
+"# Stage 5 production intervals. 100 and 200 s: the S18.9-S18.10 pilots (same layout and settings as production, PI Kp 30 Ki 0.3, Ta 40 Tb 16), settled start found by the settling test on T1-T3. 300-500 s: schedules/production.csv run of 17 Nov, settled ranges from the live settling test (intervals_auto_production.csv). baseline: room T_inf per channel for the mean profile; the pilot run's baseline was taken while the rod was still cooling from the tuning run, so its asymptote is extrapolated.",,,,,,,,,
+p100,data/module_08/angstrom_20261117-132324.csv,,22,,,yes,,pilot S18.9 reused for production,"data/module_08/angstrom_20261117-132324.csv:11.1,311.9:extrapolate"
+p200,data/module_08/angstrom_20261117-132324.csv,,23,,,yes,,pilot S18.10 reused for production,"data/module_08/angstrom_20261117-132324.csv:11.1,311.9:extrapolate"
+p300,data/module_08/angstrom_20261117-161210.csv,,23,2107.6,3914.2,no,,production run; settled 1500 s after the start,"data/module_08/angstrom_20261117-161210.csv:6.1,606.6"
+p400,data/module_08/angstrom_20261117-161210.csv,,24,5115.2,7523.9,no,,production run; settled 1200 s after the period change,"data/module_08/angstrom_20261117-161210.csv:6.1,606.6"
+p500,data/module_08/angstrom_20261117-161210.csv,,25,9524.9,12535.9,no,,production run; settled 2000 s after the period change,"data/module_08/angstrom_20261117-161210.csv:6.1,606.6"

@@ -1,0 +1,4 @@
+label,file,part,step,t_start_s,t_end_s,settle,exclude,notes
+p300,/Users/tianhuan_5000/Documents/GitHub/__Lab_Module_8__/data/module_08/angstrom_20261117-161210.csv,,23,2107.6,3914.2,no,,auto run
+p400,/Users/tianhuan_5000/Documents/GitHub/__Lab_Module_8__/data/module_08/angstrom_20261117-161210.csv,,24,5115.2,7523.9,no,,auto run
+p500,/Users/tianhuan_5000/Documents/GitHub/__Lab_Module_8__/data/module_08/angstrom_20261117-161210.csv,,25,9524.9,12535.9,no,,auto run

@@ -1,0 +1,6 @@
+label,file,part,step,t_start_s,t_end_s,settle,exclude,notes
+room_before,data/module_08/angstrom_20261116-211726.csv,,28,1390.4,1691.1,no,,auto schedule; OFF; room baseline; its mean becomes T_room for the later rows
+room_before,data/module_08/angstrom_20261117-000509.csv,,17,8.1,308.9,no,,auto schedule; OFF; TEC off; sets T_room
+room_before,data/module_08/angstrom_20261117-083725.csv,,17,6.1,306.8,no,,auto schedule; OFF; TEC off; sets T_room
+room_before,data/module_08/angstrom_20261117-132324.csv,,17,11.1,311.9,no,,auto schedule; OFF; TEC off; room baseline for the mean profile (T_inf per channel)
+room_before,data/module_08/angstrom_20261117-161210.csv,,17,6.1,606.6,no,,auto schedule; OFF; TEC off; room baseline (rod at room temperature) for the mean profile
